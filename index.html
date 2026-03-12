@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Room Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="booking-box">
+
+<img src="logo.png" class="logo">
+
+<h1>BOOKINGS</h1>
+
+
+<label for="room">Room</label>
+
+<select id="room" required>
+
+<optgroup label="First Floor">
+<option>Studio 1</option>
+<option>Conference Suite</option>
+<option>Meeting Room 3</option>
+</optgroup>
+
+<optgroup label="Second Floor">
+<option>Studio 2</option>
+<option>The Study</option>
+<option>Media Suite</option>
+<option>Meeting Room 4</option>
+</optgroup>
+
+<optgroup label="Third Floor">
+<option>Meeting Room 5</option>
+<option>Meeting Room 6</option>
+<option>Meeting Room 7</option>
+<option>Meeting Room 8</option>
+</optgroup>
+
+</select>
+
+
+<label for="society">Society</label>
+<input type="text" id="society" required>
+
+
+<label for="start">Start Time</label>
+<input type="time" id="start" required>
+
+
+<label for="end">End Time</label>
+<input type="time" id="end" required>
+
+
+<label for="name">Name</label>
+<input type="text" id="name" required>
+
+
+<button onclick="submitBooking()">Submit</button>
+
+<p id="message"></p>
+
+
+<h2>Current Bookings</h2>
+
+<table id="bookingTable">
+
+<tr>
+<th>Room</th>
+<th>Society</th>
+<th>Time</th>
+<th>Name</th>
+</tr>
+
+</table>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
